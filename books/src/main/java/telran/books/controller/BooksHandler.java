@@ -17,7 +17,6 @@ public class BooksHandler {
 	IBooks books;
 	
 	@PostMapping(IBookConstant.BOOK)
-	@CrossOrigin
 	public boolean addBook(@RequestBody Book book) {
 		return books.addBook(book);
 	}
